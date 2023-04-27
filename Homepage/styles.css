@@ -11,6 +11,7 @@
 body {
     font-family: Avenir;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /*Nav Bar*/
@@ -253,8 +254,33 @@ nav {
     font-family: Avenir2;
     font-weight: 800;
     margin-top: clamp(0.8rem, 2vw, 2rem);
-    margin-bottom: clamp(0.2rem, 2vw, 1.2rem);
+    margin-bottom: clamp(0.2rem, 3vw, 1.2rem);
     font-size: clamp(0.2rem, 6vw ,6rem);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        rotate: 0deg;
+    }
+    33% {
+        rotate: 20deg;
+    }
+    66% {
+        rotate: -20deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.title > h3:hover{
+    animation: shakeAnimation 700ms;
+}
+
+.title > h3:active {
+    rotate: 45deg;
 }
 
 .packageSection > button {
@@ -278,4 +304,186 @@ nav {
 button > span {
     font-size: clamp(0.2rem, 4.5vw , 6rem);
     padding-left: clamp(0.5rem, 3vw, 3rem);
+}
+
+/*Trip Section*/
+
+.tripSection {
+}
+
+.tripSection > h1 {
+    text-align: center;
+    font-size: clamp(0.2rem, 10vw , 6rem);
+    padding: clamp(0.2rem, 11vw, 20rem);
+    padding-bottom: 0;
+}
+
+.tripSection > h5 {
+    text-align: center;
+    font-family: Avenir2;
+    font-weight: 100;
+    padding-right: clamp(0.2rem, 8vw, 20rem);
+    padding-left: clamp(0.2rem, 8vw, 20rem);
+    margin: 0;
+    font-size: clamp(0.2rem ,4.1vw ,2rem);
+}
+
+.tripSlider {
+    position: relative;
+    padding-top: clamp(0.2rem, 8vw, 20rem);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tripSlider > .arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: clamp(0.2rem, 8vw, 20rem);
+    padding-left: clamp(0.2rem, 8vw, 20rem);
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Avenir2;
+    gap: clamp(0.3rem, 76vw, 500rem);
+    font-size: clamp(0.2rem ,19vw ,15rem);
+    padding-top: clamp(0.3rem, 45vw, 10rem);
+    
+}
+
+.arrows > .previous , .arrows > .next{
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.arrows > .previous:hover , .arrows > .next:hover {
+    background-color: hsla(0, 0%, 0%, 0.1);
+    color: hsla(0, 0%, 100%, 0.9);
+}
+
+.tripSlider > img {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tripSlider > h2 {
+    text-align: center;
+    font-size: clamp(0.2rem ,6vw ,5rem);
+    margin: 0;
+    padding-top: clamp(0.3rem, 45vw, 10rem);
+}
+
+.tripSlider > h5 {
+    text-align: center;
+    font-family: Avenir2;
+    font-weight: 100;
+    padding-right: clamp(0.2rem, 8vw, 20rem);
+    padding-left: clamp(0.2rem, 8vw, 20rem);
+    margin: 0;
+    font-size: clamp(0.2rem ,4.1vw ,2rem);
+}
+
+.tripSlider > button {
+    border: none;
+    border-radius: clamp(1rem, 10vw, 5rem);
+    height: clamp(0.2rem, 15vw, 6rem);
+    width: 85%;
+    background-color: #15408f;
+    color: white;
+    font-family: Avenir;
+    font-size: clamp(0.2rem, 4vw ,5rem);
+    margin-top: clamp(0.2rem, 10vw, 3rem);
+    cursor: pointer;
+    transition: 200ms;
+    margin-bottom: clamp(0.2rem, 8vw, 20rem);
+}
+
+.tripSlider > button:hover {
+    background-color: #1d4999;
+}
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    padding-right: clamp(0.2rem, 8vw, 20rem);
+    padding-left: clamp(0.2rem, 8vw, 20rem);
+    padding-top: clamp(0.2rem, 5vw, 4rem);
+}
+
+.footerGrid > h4 {
+    color: white;
+    font-family: Avenir2;
+    font-weight: 100;
+    margin: 0;
+    font-size: clamp(0.2rem ,3.2vw ,1.4rem);
+}
+
+.footerGrid {
+    display: grid;
+    padding-top: clamp(0.3rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, clamp(2rem, 30vw, 20rem));
+    grid-template-rows: repeat(2, clamp(1rem, 5vw, 3rem));
+}
+
+footer > h3 {
+    color: white;
+    text-align: center;
+    font-family: Avenir2;
+    font-weight: 100;
+    padding-top: clamp(0.3rem, 5vw, 2rem);
+    padding-bottom: clamp(0.3rem, 8vw, 4rem);
+    margin: 0;
+    font-size: clamp(0.2rem ,3.2vw ,1.4rem);
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: clamp(0.4rem, 5vw, 4rem);
+}
+
+.bottomFooter > h4 {
+    color: white;
+    font-family: Avenir2;
+    font-weight: 800;
+    margin: 0;
+    font-size: clamp(0.2rem ,3.1vw ,1.4rem);
+}
+
+.contacts {
+    display: flex;
+    gap: clamp(0.4rem, 1vw, 7rem);
+    align-items: center;
+}
+
+.contactIcons {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 100%;
+    width: clamp(0.1rem, 6vw ,5rem);
+    height: clamp(0.1rem, 6vw ,5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIcons > img {
+    width: 60%;
+    height: 60%;
+}
+
+.contactIcons > .twitter {
+    width: 60%;
+    height: 50%;
+}
+
+.contactIcons > .youtube {
+    width: 60%;
+    height: 50%;
 }
