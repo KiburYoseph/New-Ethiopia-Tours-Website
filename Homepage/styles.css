@@ -276,7 +276,7 @@ nav {
 }
 
 .title > h3:hover{
-    animation: shakeAnimation 700ms;
+    animation: shakeAnimation 300ms;
 }
 
 .title > h3:active {
@@ -307,9 +307,6 @@ button > span {
 }
 
 /*Trip Section*/
-
-.tripSection {
-}
 
 .tripSection > h1 {
     text-align: center;
@@ -471,6 +468,16 @@ footer > h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.contactIcons:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.contactIcons:active {
+    background-color: hsla(0, 0%, 100%, 0.8);
 }
 
 .contactIcons > img {
