@@ -183,13 +183,14 @@ nav {
     font-size: clamp(0.2rem ,20vw ,15rem);
 }
 
-.testimonialSection > .slider > .slideBar > .one {
-    color: #113372;
-}
-
-.testimonialSection > .slider > .slideBar > .two {
+.testimonialSection > .slider > .slideBar > div {
     color: #113372;
     opacity: 50%;
+    transition: 300ms opacity ease-in-out;
+}
+
+.testimonialSection > .slider > .slideBar > div[data-active-testimonial-slidebar] {
+    opacity: 100%;
 }
 
 /*Package Section*/
@@ -358,7 +359,12 @@ button > span {
     color: hsla(0, 0%, 100%, 0.9);
 }
 
-.tripSlider > img {
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.slides > img {
     display: block;
     position: absolute;
     z-index: -1;
@@ -366,6 +372,14 @@ button > span {
     object-position: center;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: 400ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slides > img[data-active-trip] {
+    opacity: 1;
+    transition-delay: 0ms;
 }
 
 .tripSlider > h2 {
