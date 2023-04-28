@@ -7,11 +7,9 @@
     src: url(../Fonts/AvenirLTStd-Book.otf);
 }
 
-
 body {
     font-family: Avenir;
     margin: 0;
-    overflow-x: hidden;
 }
 
 /*Nav Bar*/
@@ -33,6 +31,11 @@ nav {
 
 .burger {
     width: clamp(0.4rem, 4vw, 2rem);
+    cursor: pointer;
+}
+
+.burger:hover {
+    animation: shakeAnimation 400ms;
 }
 
 
@@ -199,31 +202,30 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: clamp(0.2rem, 6vw, 4rem);
+    padding-right: clamp(0.2rem, 6vw, 4rem);
 }
 
 .packageSection > h1 {
     text-align: center;
-    padding: clamp(0.2rem, 1vw, 15rem);
     padding-bottom: clamp(0.2rem, 7vw, 5rem);
     margin: 0;
-    font-size: clamp(0.2rem ,9vw ,6rem);
+    font-size: clamp(0.2rem ,9vw ,6rem) !important;
 }
 
 .packageSection > h5 {
     text-align: center;
     font-family: Avenir2;
-    font-weight: 100;
-    padding-right: clamp(0.2rem, 11vw, 20rem);
-    padding-left: clamp(0.2rem, 11vw, 20rem);
+    font-weight: 100;;
     margin: 0;
     font-size: clamp(0.2rem ,3.8vw ,2rem);
+    padding-bottom: 0 !important;
 }
 
 .packageSection > img {
-    width: 85%;
+    width: 100%;
     padding-top: clamp(0.2rem, 6vw, 4rem);
     padding-bottom: clamp(0.2rem, 6vw, 4rem);
-
 }
 
 .packageOptions {
@@ -418,3 +420,6 @@ button > span {
     background-color: #1d4999;
 }
 
+footer {
+    margin-top: 0 !important;
+}

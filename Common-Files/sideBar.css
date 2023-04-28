@@ -2,7 +2,7 @@
     display: none;
     flex-direction: column;
     gap: clamp(0.5rem, 4vw, 2rem);
-    position: absolute;
+    position: fixed;
     z-index: 999;
     right: 0;
     width: 0%;
@@ -17,6 +17,7 @@
 .sideBar > a {
     text-decoration: none;
     font-size: clamp(0.4rem, 5vw, 3rem);
+    color: white;
 }
 .sideBar > a:visited {
     color: White;
@@ -26,6 +27,22 @@
     margin: 0;
     font-size: clamp(0.4rem, 15vw, 8rem);
     cursor: pointer;
+}
+
+.sideBar > p:hover {
+    animation: exitSideBar 700ms infinite ease-in-out;
+}
+
+@keyframes exitSideBar {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(1.5rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .everything{

@@ -10,7 +10,8 @@ burger.onclick = function () {
         sideBar.style.transform = "translateX(0%)"
      }
      ,10);
-    everything.style.filter="blur(4px)"
+    everything.style.filter = "blur(4px)";
+    document.body.style.overflowY = "hidden";
 }
 
 exitSideBar.onclick = function () {
@@ -21,4 +22,5 @@ exitSideBar.onclick = function () {
      }
      ,100);
      everything.style.filter="blur(0)"
+     document.body.style.overflowY = "auto";
 }

@@ -1,6 +1,8 @@
 .packageSection {
     display: flex;
     flex-direction: column;
+    padding-left: clamp(0.2rem, 6vw, 4rem);
+    padding-right: clamp(0.2rem, 6vw, 4rem);
 }
 
 .packageSection > h1 {
@@ -120,3 +122,6 @@ button > span {
     }
 }
 
+footer {
+    margin-top: clamp(0.4rem, 10vw, 6rem);
+}

@@ -7,16 +7,16 @@
     src: url(../Fonts/AvenirLTStd-Book.otf);
 }
 
-
 body {
     margin: 0;
     font-family: Avenir;
-    position: relative;
 }
 
+.awashImage1 {
+    height: clamp(1rem, 120vw, 100rem);
+}
 
-.evangadiImage2 {
+.awashImage2 {
     height: clamp(1rem, 85vw, 100rem);
 }
-
 
