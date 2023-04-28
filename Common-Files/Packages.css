@@ -1,0 +1,122 @@
+.packageSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.packageSection > h1 {
+    padding-bottom: clamp(0.2rem, 7vw, 5rem);
+    margin: 0;
+    font-size: clamp(0.2rem ,7vw ,6rem);
+}
+
+.packageSection > h5 {
+    font-family: Avenir2;
+    font-weight: 100;
+    margin: 0;
+    font-size: clamp(0.2rem ,3.8vw ,2rem);
+    padding-bottom: clamp(0.2rem, 7vw, 5rem);
+}
+
+.packageOptions {
+    width: 100%;
+}
+
+.packageOptions > hr, .option > hr {
+    width: 100%;
+    margin: 0;
+    border: solid clamp(0.01rem, 0.2vw, 0.124rem)
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title > h2 {
+    font-family: Avenir2;
+    font-weight: 800;
+    margin-top: clamp(0.8rem, 2vw, 2rem);
+    margin-bottom: clamp(0.2rem, 2vw, 1.2rem);
+    font-size: clamp(0.2rem, 6vw ,4rem);
+}
+
+.title > h3 {
+    margin: 0;
+    font-family: Avenir2;
+    font-weight: 800;
+    margin-top: clamp(0.8rem, 2vw, 2rem);
+    margin-bottom: clamp(0.2rem, 3vw, 1.2rem);
+    font-size: clamp(0.2rem, 6vw ,6rem);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        rotate: 0deg;
+    }
+    33% {
+        rotate: 20deg;
+    }
+    66% {
+        rotate: -20deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.title > h3:hover{
+    animation: shakeAnimation 300ms;
+}
+
+.packageSection > button {
+    align-self: center;
+    border: none;
+    border-radius: clamp(1rem, 10vw, 5rem);
+    height: clamp(0.2rem, 15vw, 8rem);
+    width: 100%;
+    background-color: #113372;
+    color: white;
+    font-family: Avenir;
+    font-size: clamp(0.2rem, 4vw ,6rem);
+    margin-top: clamp(0.2rem, 10vw, 3rem);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.packageSection > button:hover {
+    background-color: #1d4999;
+}
+
+button > span {
+    font-size: clamp(0.2rem, 4.5vw , 6rem);
+    padding-left: clamp(0.5rem, 3vw, 3rem);
+}
+
+.option > p {
+        font-family: Avenir2;
+        margin: 0;
+        font-size: clamp(0.4rem, 4vw, 2rem);
+        padding-bottom: clamp(0.4rem, 6vw, 3rem);
+        opacity: 0;
+        display: none;
+        
+}
+
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0.25;
+    }
+    66% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

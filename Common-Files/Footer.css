@@ -1,0 +1,94 @@
+/*Footer*/
+
+footer {
+    background-color: black;
+    padding-right: clamp(0.2rem, 8vw, 20rem);
+    padding-left: clamp(0.2rem, 8vw, 20rem);
+    padding-top: clamp(0.2rem, 5vw, 4rem);
+}
+
+.logo {
+    width: clamp(0.4rem, 20vw, 10rem);
+}
+
+.footerGrid > h4 {
+    color: white;
+    font-family: Avenir2;
+    font-weight: 100;
+    margin: 0;
+    font-size: clamp(0.2rem ,3.2vw ,1.4rem);
+}
+
+.footerGrid {
+    display: grid;
+    padding-top: clamp(0.3rem, 5vw, 5rem);
+    grid-template-columns: repeat(2, clamp(2rem, 30vw, 20rem));
+    grid-template-rows: repeat(2, clamp(1rem, 5vw, 3rem));
+}
+
+footer > h3 {
+    color: white;
+    text-align: center;
+    font-family: Avenir2;
+    font-weight: 100;
+    padding-top: clamp(0.3rem, 5vw, 2rem);
+    padding-bottom: clamp(0.3rem, 8vw, 4rem);
+    margin: 0;
+    font-size: clamp(0.2rem ,3.2vw ,1.4rem);
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: clamp(0.4rem, 5vw, 4rem);
+}
+
+.bottomFooter > h4 {
+    color: white;
+    font-family: Avenir2;
+    font-weight: 800;
+    margin: 0;
+    font-size: clamp(0.2rem ,3.1vw ,1.4rem);
+}
+
+.contacts {
+    display: flex;
+    gap: clamp(0.4rem, 1vw, 7rem);
+    align-items: center;
+}
+
+.contactIcons {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 100%;
+    width: clamp(0.1rem, 6vw ,5rem);
+    height: clamp(0.1rem, 6vw ,5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.contactIcons:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
+}
+
+.contactIcons:active {
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.contactIcons > img {
+    width: 60%;
+    height: 60%;
+}
+
+.contactIcons > .twitter {
+    width: 60%;
+    height: 50%;
+}
+
+.contactIcons > .youtube {
+    width: 60%;
+    height: 50%;
+}

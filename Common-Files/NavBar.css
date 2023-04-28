@@ -1,0 +1,19 @@
+nav {
+    background-color: white;
+    padding: clamp(0.1rem, 5vw, 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+}
+
+.logo {
+    width: clamp(0.4rem, 20vw, 10rem);
+}
+
+.burger {
+    width: clamp(0.4rem, 4vw, 2rem);
+    cursor: pointer;
+}
