@@ -1,10 +1,10 @@
 @font-face {
     font-family: Avenir;
-    src: url(../Fonts/AvenirLTStd-Black.otf);
+    src: url(./Fonts/AvenirLTStd-Black.otf);
 }
 @font-face {
     font-family: Avenir2;
-    src: url(../Fonts/AvenirLTStd-Book.otf);
+    src: url(./Fonts/AvenirLTStd-Book.otf);
 }
 
 
@@ -42,7 +42,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../Homepage/Images/Hero-Background.jpg);
+    background-image: url(./Homepage/Images/Hero-Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,7 +127,7 @@ nav {
 .testimonialSection > .imageSpace {
     width: 100%;
     height: clamp(0.3rem, 55vw, 50rem);
-    background-image: url(../Homepage/Images/Testimonial-Background.jpg);
+    background-image: url(./Homepage/Images/Testimonial-Background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
