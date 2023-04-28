@@ -34,9 +34,6 @@ nav {
     cursor: pointer;
 }
 
-.burger:hover {
-    animation: shakeAnimation 400ms;
-}
 
 
 /*Hero Section*/

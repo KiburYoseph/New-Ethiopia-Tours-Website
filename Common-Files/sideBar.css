@@ -13,6 +13,9 @@
     transition: 300ms;
     transition-delay: 300ms display;
 }
+.burger:hover {
+    animation: shakeAnimation 400ms;
+}
 
 .sideBar > a {
     text-decoration: none;
