@@ -18,7 +18,23 @@
     text-decoration: none;
     font-size: clamp(0.4rem, 5vw, 3rem);
     color: white;
+    position: relative;
 }
+
+.sideBar > a:after {
+    content: "";
+    border-bottom: solid 2px white;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 300ms ease-in-out;
+}
+
+.sideBar > a:hover:after {
+    width: 100%;
+}
+
 .sideBar > a:visited {
     color: White;
 }
