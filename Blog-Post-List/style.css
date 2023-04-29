@@ -1,7 +1,39 @@
-.content {
-    padding-left: clamp(0.2rem, 6vw, 4rem);
-    padding-right: clamp(0.2rem, 6vw, 4rem);
+@font-face {
+    font-family: Avenir;
+    src: url(../Fonts/AvenirLTStd-Black.otf);
 }
+@font-face {
+    font-family: Avenir2;
+    src: url(../Fonts/AvenirLTStd-Book.otf);
+}
+
+body {
+    font-family: Avenir;
+    margin: 0;
+}
+
+.content {
+    padding-top: clamp(0.4rem, 10vw, 5rem);
+}
+
+.blackSubHeading {
+    color: black !important;
+}
+
+.noPadding {
+    padding-bottom: 0 !important;
+}
+
+.subSubHeading {
+    padding-bottom: 0 !important;
+    font-family: Avenir2;
+}
+
+.greySub{
+    color: rgb(107, 107, 107);
+    font-weight: 800 !important;
+}
+
 
 .heroSection > img {
     width: 100%;
@@ -10,35 +42,40 @@
     padding-bottom: clamp(0.4rem, 11vw, 5rem);
 }
 
-.content > h1 {
+.articleOption > h1 {
     margin: 0;
     font-size: clamp(0.4rem, 9vw, 5rem);
     padding-bottom: clamp(0.4rem, 6vw, 2rem);
 }
 
-.content > h2 {
+.articleOption > h2 {
     margin: 0;
     font-size: clamp(0.4rem, 5vw, 3rem);
     color: #0E3D95;
     padding-bottom: clamp(0.4rem, 5vw, 2rem);
 }
 
-.content > p {
+.articleOption > p {
     font-family: Avenir2;
     margin: 0;
     font-size: clamp(0.4rem, 3vw, 2rem);
     padding-bottom: clamp(0.4rem, 3vw, 2rem);
 }
 
-.content > img {
+.articleOption > img {
     object-fit: cover;
     width: 100%;
     padding-bottom: clamp(0.4rem, 3vw, 2rem);
 }
 
-.content > h3 {
+.articleOption > h3 {
     margin: 0;
     font-size: clamp(0.4rem, 4vw, 3rem);
     color: #0E3D95;
     padding-bottom: clamp(0.4rem, 5vw, 2rem);
+}
+
+hr {
+    border-bottom: solid black 1px;
+    margin-bottom: clamp(0.5rem, 8vw, 6rem);
 }
