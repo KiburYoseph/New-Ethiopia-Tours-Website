@@ -26,7 +26,7 @@
 .content > p {
     font-family: Avenir2;
     margin: 0;
-    font-size: clamp(0.4rem, 3vw, 2rem);
+    font-size: clamp(0.4rem, 3.3vw, 2rem);
     padding-bottom: clamp(0.4rem, 3vw, 2rem);
 }
 
@@ -137,6 +137,100 @@
 }
 
 .list[data-active-list] {
+    display: block;
+    opacity: 1;
+    transition: 300ms opacity ease-in-out;
+}
+
+.commentSection {
+    padding-left: clamp(0.2rem, 6vw, 4rem);
+    padding-right: clamp(0.2rem, 6vw, 4rem);
+}
+
+.commentSection > h1 {
+    margin: 0;
+    font-size: clamp(0.4rem, 7vw, 4rem);
+    padding-top: clamp(0.2rem, 10vw, 6rem);
+}
+.commentSection > hr {
+    border-bottom: black solid 1px;
+    margin-bottom: clamp(0.2rem, 5vw, 2rem);
+}
+
+.comment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commentList > hr {
+    border-bottom: solid rgb(221, 221, 221) 1px;
+}
+
+.comment > .insideContent > h2 {
+    margin: 0;
+    font-size: clamp(0.4rem, 4vw, 2rem);
+    color: #0E3D95 ;
+}
+
+.comment > .insideContent > p {
+    font-family: Avenir2;
+    margin: 0;
+    font-size: clamp(0.4rem, 3.3vw, 2rem);
+}
+
+.comment > p {
+    margin: 0;
+    font-family: Avenir2;
+    font-weight: 800;
+    color: rgb(156, 156, 156);
+    font-size: clamp(0.4rem, 3vw, 2rem);
+    margin-left: auto;
+}
+
+.commentPageNav {
+    display: flex;
+    color: rgb(156, 156, 156);
+    align-items: center;
+    gap: clamp(0.4rem, 1vw, 2rem);
+}
+
+.commentPageNav > p {
+    font-family: Avenir2;
+    font-weight: 600;
+    font-size: clamp(0.4rem, 3.5vw, 2rem);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.commentPageNav > h5 {
+    color: #0E3D95 !important;
+}
+
+.commentPageNav > p:nth-child(1) {
+    color: #0E3D95;
+}
+
+.commentPageNav > p:hover, .commentPageNav > h5:hover{
+    color: #3b62a8 !important;
+}
+
+.commentPageNav > h5 {
+    font-family: Avenir2;
+    font-weight: 600;
+    margin-left: auto;
+    font-size: clamp(0.4rem, 3.5vw, 2rem);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.commentList {
+    display: none;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+}
+
+.commentList[data-active-comment-list] {
     display: block;
     opacity: 1;
     transition: 300ms opacity ease-in-out;
