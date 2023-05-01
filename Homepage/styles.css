@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+h1 {
+    line-height: clamp(1rem, 8vw, 4rem);
+}
+
 /*Nav Bar*/
 
 nav {
@@ -52,8 +56,9 @@ nav {
 .heroSection > h1 {
     text-align: center;
     font-size: clamp(0.1rem, 9vw, 4rem);
-    margin-top: 17rem;
+    margin-top: clamp(1rem, 50vw, 13rem);
     padding: clamp(0.2rem, 2vw, 2rem);
+    margin-bottom: 0px !important;
 }
 
 .heroSection > h4 {
@@ -62,6 +67,7 @@ nav {
     font-family: Avenir2;
     font-weight: 100;
     font-size: clamp(0.1rem, 4vw, 1.7rem);
+    margin-top: clamp(0.2rem, 10vw, 1rem) !important;
 }
 
 .buttons {
@@ -260,21 +266,6 @@ nav {
     transition: 200ms;
 }
 
-@keyframes shakeAnimation {
-    0% {
-        rotate: 0deg;
-    }
-    33% {
-        rotate: 20deg;
-    }
-    66% {
-        rotate: -20deg;
-    }
-    100% {
-        rotate: 0deg;
-    }
-}
-
 .title > h3:hover{
     animation: shakeAnimation 300ms;
 }
@@ -351,11 +342,6 @@ button > span {
 .arrows > .previous , .arrows > .next{
     transition: 200ms;
     cursor: pointer;
-}
-
-.arrows > .previous:hover , .arrows > .next:hover {
-    background-color: hsla(0, 0%, 0%, 0.1);
-    color: hsla(0, 0%, 100%, 0.9);
 }
 
 .slides {

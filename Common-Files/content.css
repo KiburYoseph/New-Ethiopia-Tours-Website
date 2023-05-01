@@ -3,6 +3,10 @@
     padding-right: clamp(0.2rem, 6vw, 4rem);
 }
 
+h1 {
+    line-height: clamp(0.4rem, 8vw, 4rem);
+}
+
 .heroSection > img {
     width: 100%;
     object-fit: cover;
@@ -33,7 +37,9 @@
 .content > img {
     object-fit: cover;
     width: 100%;
-    padding-bottom: clamp(0.4rem, 3vw, 2rem);
+    padding-top: clamp(0.4rem, 3vw, 5rem);
+    padding-bottom: clamp(0.4rem, 7vw, 5rem);
+    
 }
 
 .content > h3 {

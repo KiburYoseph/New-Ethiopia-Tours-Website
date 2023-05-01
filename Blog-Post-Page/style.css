@@ -41,3 +41,8 @@ body {
 .authorHR {
     border-bottom: solid 1px black;
 }
+
+button {
+    margin-top: clamp(0.5rem, 7vw, 4rem) !important;
+    margin-bottom: clamp(0.4rem, 7vw, 4rem);
+}

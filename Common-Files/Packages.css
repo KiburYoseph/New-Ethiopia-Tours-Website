@@ -54,21 +54,6 @@
     transition: 200ms;
 }
 
-@keyframes shakeAnimation {
-    0% {
-        rotate: 0deg;
-    }
-    33% {
-        rotate: 20deg;
-    }
-    66% {
-        rotate: -20deg;
-    }
-    100% {
-        rotate: 0deg;
-    }
-}
-
 .title > h3:hover{
     animation: shakeAnimation 300ms;
 }
